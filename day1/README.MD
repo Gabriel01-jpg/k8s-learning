@@ -24,7 +24,7 @@ Workers - Tudo que vai carregar as aplicações
 
 
 Componentes do control plane:
-    - etcd -> é o banco que guarda todo o estado do cluster
+    - etcd -> é o datastore que guarda todo o estado do cluster
     - kube apiserver -> conversa com todo o cluster, que tem como função gerenciar toda comunicação e guardar informações no etcd
     - kube scheduler -> responsável por gerenciar local onde vai rodar os containers e controlar nós e pods...
     - kube controller manager -> 
@@ -57,4 +57,7 @@ weave net -> 6783/6784 -> TCP/UDP
     - Pode ter mais de um container e compartilha o universo com todos
 
 
-## 
+## Deployment
+    - Um dos principais controllers utilizados
+    - Responsável por gerenciar o ciclo de vida das aplicações
+    - 
